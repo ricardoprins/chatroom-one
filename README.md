@@ -1,6 +1,6 @@
 # Chatroom One
 
-[![Gitter](https://img.shields.io/gitter/room/ricardoprins/community)(https://www.gitter.com/ricardoprins/community)]
+<a href="https://www.gitter.com/ricardoprins/community"><img alt="gitter logo" src="https://img.shields.io/gitter/room/ricardoprins/community"></a>
 
 A sample implementation of a chat room, using FastAPI and MongoDB.
 
