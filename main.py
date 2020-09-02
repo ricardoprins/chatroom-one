@@ -1,7 +1,10 @@
 from fastapi import FastAPI, WebSocket, Request
 from fastapi.templating import Jinja2Templates
+from fastapi.staticfiles import StaticFiles
+
 
 app = FastAPI()
+app.mount('/assets', StaticFiles(directory='templates/assets'), name='assets')
 templates = Jinja2Templates(directory='templates')
 
 

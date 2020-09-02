@@ -1,30 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
     <title>Chat</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('assets', path='/css/style.min.css') }}"
+    />
+
+    <script src="{{ url_for('assets', path='/js/websocket.min.js') }}"></script>
   </head>
   <body>
-    <h1>WebSocket Chat</h1>
-    <form action="" onsubmit="sendMessage(event)">
-      <input type="text" id="messageText" autocomplete="off" />
-      <button>Send</button>
-    </form>
-    <ul id="messages"></ul>
-    <script>
-      var ws = new WebSocket("ws://localhost:8000/ws");
-      ws.onmessage = function (event) {
-        var messages = document.getElementById("messages");
-        var message = document.createElement("li");
-        var content = document.createTextNode(event.data);
-        message.appendChild(content);
-        messages.appendChild(message);
-      };
-      function sendMessage(event) {
-        var input = document.getElementById("messageText");
-        ws.send(input.value);
-        input.value = "";
-        event.preventDefault();
-      }
-    </script>
+    <!--Topbar-->
+    <section class="topbar"><h1>Boring Chatroom</h1></section>
+
+    <!--Chat messages-->
+    <section class="chat-display">
+      <ul id="messages"></ul>
+    </section>
+
+    <!--User message area-->
+    <section class="chat-messaging">
+      <form action="" onsubmit="sendMessage(event)">
+        <input
+          class="chat-form"
+          type="text"
+          id="messageText"
+          autocomplete="off"
+        />
+        <button>Send</button>
+      </form>
+    </section>
+    <!--Footer-->
+    <footer></footer>
   </body>
 </html>
