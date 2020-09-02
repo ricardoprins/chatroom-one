@@ -1,5 +1,7 @@
 # Chatroom One
 
+![Gitter](https://img.shields.io/gitter/room/ricardoprins/community)
+
 A sample implementation of a chat room, using FastAPI and MongoDB.
 
 I will do it in a step-by-step process - I will try a new method here that I've learned from an online course I took on Vue3 - I'll build a different branch for each step of the process.
@@ -13,4 +15,4 @@ Please check _requirements.txt_ for the dependencies - I'll be adding to it prog
 ### Branches
 
 - master: when I finish, it will contain the main version - for now, as the description mentions, it just contains a very basic version
-- adding-complexity: few improvements to CSS
+- adding-complexity: few improvements to CSS (not complete yet!)
