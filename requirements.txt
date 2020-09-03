@@ -1,3 +1,6 @@
 fastapi>=0.61.1
 uvicorn>=0.11.8
 jinja2>=2.11.2
+motor>=2.2.0
+python-dotenv>=0.14.0
+dnspython>=2.0.0
