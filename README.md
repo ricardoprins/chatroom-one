@@ -14,5 +14,6 @@ Please check _requirements.txt_ for the dependencies - I'll be adding to it prog
 
 ### Branches
 
-- master: when I finish, it will contain the main version - for now, as the description mentions, it just contains a very basic version
-- adding-complexity: few improvements to CSS (not complete yet!)
+- **master**: when I finish, it will contain the main version - for now, as the description mentions, it just contains a very basic version
+- **adding-complexity**: few improvements to CSS (not complete yet!)
+- **connect-to-db**: initial connection to MongoDB + a few more endpoints
