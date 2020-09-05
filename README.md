@@ -1,7 +1,5 @@
-# Chatroom One
+# Chatroom One - Adding Complexity to Front End
 
-<a href="https://www.gitter.im/ricardoprins/community"><img alt="gitter logo" src="https://img.shields.io/gitter/room/ricardoprins/community"></a>
+It has to look nicer, right?
 
-Well, MongoDB database connection is working.
-
-I have also added a few of the endpoints that handle navigating through the chatroom, but before I continue any further, I have to add more elements to the front end.
+So, time to add some visual complexity to it...in a future step, who knows...maybe even some REAL frontend, like React, Vue or Angular...

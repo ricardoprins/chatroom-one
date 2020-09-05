@@ -15,8 +15,12 @@ from fastapi.middleware.cors import CORSMiddleware
 from schemas.users import RegisterRequest
 from schemas.chatroom import RoomCreateRequest
 
+from fastapi.staticfiles import StaticFiles
+
+
 
 app = FastAPI()
+app.mount('/assets', StaticFiles(directory='templates/assets'), name='assets')
 templates = Jinja2Templates(directory='templates')
 app.add_middleware(
     CORSMiddleware,
